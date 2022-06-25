@@ -6,8 +6,6 @@
 
 <code>📓 [Experience](PROJECTS.md)</code>
 
-<code>🪙 [Rates](RATES.md)</code><br>
-
 <code>👷 Speciality: Software engineer / Backend </code><br>
 
 <code>🧑‍💻 Languages: C#, C++, Solidity</code>
