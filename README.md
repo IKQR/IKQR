@@ -4,7 +4,7 @@
 
 <code>💡 [Skills](SKILLS.md)</code>
 
-<code>📓 [Experience](PROJECTS.md)</code>
+<code>📓 [Experience](EXPERIENCE.md)</code>
 
 <code>👷 Speciality: Software engineer / Backend </code><br>
 
