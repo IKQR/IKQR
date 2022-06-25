@@ -4,7 +4,7 @@
 
 <code>💡 [Skills](SKILLS.md)</code>
 
-<code>📓 [Projects](PROJECTS.md)</code>
+<code>📓 [Experience](PROJECTS.md)</code>
 
 <code>🪙 [Rates](RATES.md)</code><br>
 
