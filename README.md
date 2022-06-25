@@ -8,7 +8,7 @@
 
 <code>👷 Speciality: Software engineer / Backend </code><br>
 
-<code>🧑‍💻 Languages: C#, C++, Solidity</code>
+<code>🧑‍💻 Languages: C#, Solidity</code>
 
 <code>📦 Tech stack: DotNet (Framework 4-4.8, Core 3, net 5-6), Cloud DevOps </code>
 
