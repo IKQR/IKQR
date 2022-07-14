@@ -1,7 +1,7 @@
 RemSoft.Dev 
 ----------------------
 
-> November 2021 - present
+> October 2021 - present
 
 **Project**: NDA platform
 
@@ -10,14 +10,26 @@ solution. You have a seamless payroll experience with our state-of-the-art HR So
 this platform. 
 
 **Responsibilities**: Entire service was written in .NET. The project has been on the market for quite some time
-and is constantly being updated. This is what our team did. Technologies: .NET
+and is constantly being updated. This is what our team did. 
+
+**Technologies**: .NET
+______
+
+**Project**: NDA platform
+
+**Description**: Web service for a large company selling their own products all over the world.
+
+**Responsibilities**: Entire service was written in .NET Framework 4.7. The project has been on the market for quite some time
+and is constantly being updated.
+
+**Technologies**: .NET, Sitecore, Html, Js, Solr
 ______
 **Project**: NDA E-learning platform
 
 **Description**: The e-learning platform supports various learning processes and helps schools find the right
 teachers for educators. We created a website from scratch. Technologies: .NET, EF, DB, SQL, Angula, Azure
 
-**Technologies**: .NET, EF, DB, SQL, Angula, Azure
+**Technologies**: .NET 6, EF, DB, SQL, Angular, Azure
 
 ______
 
@@ -25,7 +37,7 @@ ______
 
 **Description**: Web site for generation and email analysis Responsibilities: Created an analytics website for generation and analysis email campaigns results with lot of statistics data, provided by customers API. Also generation and analysis Salesforce sales data together with small engine for AI prediction of next possible sales results. 
 
-**Technologies**: .Net 5, SQL,Html, CSS, JS
+**Technologies**: .Net 5, SQL,Html, CSS, JS, Crossbar.IO
 
 _____
 
@@ -48,7 +60,7 @@ ____
 
 **Responsibilities**: Developed application from scratch, implemented new features, fixed bugs. 
 
-**Technologies**: .NET, WPF, XMAL, Xamarin
+**Technologies**: .NET, WPF, XAML
 
 
 Freelance
@@ -116,6 +128,3 @@ Brainer Desision
 panel
 
 **Technologies**: PHP, Python, C#
-
-
-
