@@ -65,7 +65,7 @@ ____
 
 Freelance
 ---
-> August 2021 - January 2021
+> August 2021 - January 2022
 
 **Project**: Saldis 
 
@@ -91,7 +91,7 @@ ports on a custom board
 
 Infopulse + KPI
 ---
-> January 2021 - July 2020
+> January 2020 - July 2021
 
 **Project**: Website Down Syndrome 
 
@@ -118,7 +118,7 @@ the software product for problems or issues.
 
 Brainer Desision
 ---
-> Jun 2019 - February 2020
+> Jun 2019 - January 2020
 > 
 **Project**: startup company
 
