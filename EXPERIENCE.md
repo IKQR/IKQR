@@ -106,7 +106,7 @@ the software product for problems or issues.
 
 Brainer Desision
 ---
-> August 2019 - February 2020
+> Jun 2019 - February 2020
 > 
 **Project**: startup company
 
