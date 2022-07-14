@@ -15,6 +15,7 @@
     - Framework 4.4-4.8
     - Core 3.1-5
     - 5-6 (7 preview)
+- Sitecore
 - WPF
 - Windows Forms
 - ASP .NET
