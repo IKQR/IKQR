@@ -27,7 +27,7 @@ ______
 **Project**: NDA E-learning platform
 
 **Description**: The e-learning platform supports various learning processes and helps schools find the right
-teachers for educators. We created a website from scratch. Technologies: .NET, EF, DB, SQL, Angula, Azure
+teachers for educators. We created a website from scratch. 
 
 **Technologies**: .NET 6, EF, DB, SQL, Angular, Azure
 
@@ -35,7 +35,9 @@ ______
 
 **Project**: Website for analysis NDA
 
-**Description**: Web site for generation and email analysis Responsibilities: Created an analytics website for generation and analysis email campaigns results with lot of statistics data, provided by customers API. Also generation and analysis Salesforce sales data together with small engine for AI prediction of next possible sales results. 
+**Description**: Web site for generation and email analysis 
+
+**Responsibilities**: Created an analytics website for generation and analysis email campaigns results with lot of statistics data, provided by customers API. Also generation and analysis Salesforce sales data together with small engine for AI prediction of next possible sales results. 
 
 **Technologies**: .Net 5, SQL,Html, CSS, JS, Crossbar.IO
 
@@ -43,7 +45,9 @@ _____
 
 **Project**: Healthcare project NDA
 
-**Description**: Healthcare application for generation client reports Responsibilities:
+**Description**: Healthcare application for generation client reports 
+
+**Responsibilities**:
 - Created report using DevExpress, Web Api, Angular Created DataBase and Tables
 - Updated few old tables for additional functionality
 - Created ASP .NET Core Web API, Tests projects, separated using layer architecture Updated few old DTOs and Request Models - Created Mapper Profiles using AutoMapper Created controllers, services
