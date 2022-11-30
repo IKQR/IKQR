@@ -1,7 +1,20 @@
 RemSoft.Dev 
 ----------------------
 
-> October 2021 - present
+> August 2022 - present
+
+**Project**: NDA game
+
+**Description**: Blockchain AAA game with RPG mechanics and strong backend part.
+
+**Responsibilities**: Write backend in .Net 6. Develop of architecture for a number of necessary services for processing the player's session.
+
+**Technologies**: .Net 6, MongoDb (DocumentDB), Redis, Hangfire
+
+RemSoft.Dev 
+----------------------
+
+> October 2021 - October 2022
 
 **Project**: NDA platform
 
