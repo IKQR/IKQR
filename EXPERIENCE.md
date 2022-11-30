@@ -1,4 +1,4 @@
-RemSoft.Dev 
+Whimsy Games
 ----------------------
 
 > August 2022 - present
