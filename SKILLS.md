@@ -3,7 +3,7 @@
 -  VB .NET
 -  SQL
 -  TypeScript
--  JS
+-  JavaScript
 
 # Markup languages:
 - HTML (css)
@@ -13,9 +13,8 @@
 # Technologies (MAIN stack)
 - .NET
     - Framework 4.4-4.8
-    - Core 3.1-5
+    - Core 3.1
     - 5-6 (7 preview)
-- Sitecore
 - WPF
 - Windows Forms
 - ASP .NET
@@ -32,9 +31,13 @@
     - S3
     - EC2
     - Grafana
+    - Kafka
     - RabbitMQ
-    - Pipepleine
+    - Codecommit
+    - Pipelines
     - Elastic Beanstalks
+    - Gamelift
+    - DocumentDB
 
 # Databases
 - **PostgreSQL**
@@ -43,12 +46,14 @@
 - SQLite
 - DynamoDB
 - MS SQL Server
+- MongoDB
 
 # Instruments
 - GIT
     - GitHub
     - GitLab (CI/CD)
     - Bitbacket
+    - Codecommit
 - IDE
     - Rider
     - Visual Studio (2019-2022)
@@ -61,6 +66,8 @@
     - QEmu
     - Docker
     - Oracle VirtualBox
+    - VMware
+    - Termux (Proot-distro, Andronix) 
 - Others
     - Postman
     - Bitvise SSH Client
