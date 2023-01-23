@@ -16,6 +16,17 @@ RemSoft.Dev
 
 > October 2021 - present
 
+______
+
+**Project**: NDA System
+
+**Description**: Card payment system on P400 terminal 
+
+**Responsibilities**: The backend part of the project is responsible for calling commands on the P400 terminal and acts as an intermediary between the terminal and the external parent.
+
+**Technologies**: .Net 6, WAMP, Crossbar.IO
+______
+
 **Project**: NDA platform
 
 **Description**: This platform provides your business with the industry's leading payroll software as a complete
@@ -52,7 +63,7 @@ ______
 
 **Responsibilities**: Created an analytics website for generation and analysis email campaigns results with lot of statistics data, provided by customers API. Also generation and analysis Salesforce sales data together with small engine for AI prediction of next possible sales results. 
 
-**Technologies**: .Net 5, SQL,Html, CSS, JS, Crossbar.IO
+**Technologies**: .Net 5, SQL, Html, CSS, JS, Crossbar.IO
 
 _____
 
@@ -67,18 +78,7 @@ _____
 - Created UI using HTML, CSS, Angular
 - Created report using DevExpress 
 
-**Technologies**: .Net Core 3.1, MS SQL, EF core, Angular, HTML CSS, DevExpress, XML
-
-____
-
-**Project**: Desktop application NDA
-
-**Description**: Desktop application-reminder for office workers to do exercises.
-
-**Responsibilities**: Developed application from scratch, implemented new features, fixed bugs. 
-
-**Technologies**: .NET, WPF, XAML
-
+**Technologies**: .Net Core 3.1, MS SQL, EF core, Angular, HTML CSS
 
 Freelance
 ---
