@@ -136,7 +136,7 @@ the software product for problems or issues.
 Brainer Desision
 ---
 > Jun 2019 - January 2020
-> 
+
 **Project**: startup company
 
 **Description**: Interactive mobile application in augmented reality
