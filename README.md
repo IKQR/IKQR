@@ -1,5 +1,3 @@
-<code>🎓 Student: KPI / IT-93</code>
-
 <code>🎮 Company: Whimsy Games</code>
 
 <code>💡 [Skills](SKILLS.md)</code>
