@@ -1,7 +1,7 @@
 Whimsy Games
 ----------------------
 
-> August 2022 - May 2023
+> August 2022 - present
 
 **Project**: NDA game
 
