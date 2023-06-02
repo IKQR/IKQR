@@ -9,7 +9,7 @@ Whimsy Games
 
 **Responsibilities**: Write backend in .Net 6. Develop of architecture for a number of necessary services for processing the player's session.
 
-**Technologies**: asp.net (net 6-7), AWS, MongoDb (DocumentDB), Redis, Kafka, Unity
+**Technologies**: asp.net (net 6-7), GraphQL, AWSSDK (also GameLift sdk), MongoDb (DocumentDB), Redis, Kafka, Unity
 
 RemSoft.Dev 
 ----------------------
@@ -25,6 +25,16 @@ ______
 **Responsibilities**: The backend part of the project is responsible for calling commands on the P400 terminal and acts as an intermediary between the terminal and the external parent.
 
 **Technologies**: asp.net (net 6-7), WAMP, Crossbar.IO, ZVT
+
+______
+
+**Project**: NDA System
+
+**Description**: Innovative project involves a next-gen solution for microbial water quality monitoring and management. The technology combines automated sensors, advanced data analytics, and a user-centric dashboard to enhance the security and reliability of drinking water delivery worldwide.  
+
+**Responsibilities**: The backend part of the project is responsible for development of system's view panel.
+
+**Technologies**: blaor wasm, asp.net (net 6)
 ______
 
 **Project**: NDA platform
