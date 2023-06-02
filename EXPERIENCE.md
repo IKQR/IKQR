@@ -1,7 +1,7 @@
 Whimsy Games
 ----------------------
 
-> August 2022 - present
+> August 2022 - May 2023
 
 **Project**: NDA game
 
@@ -9,7 +9,7 @@ Whimsy Games
 
 **Responsibilities**: Write backend in .Net 6. Develop of architecture for a number of necessary services for processing the player's session.
 
-**Technologies**: .Net 6, MongoDb (DocumentDB), Redis, Hangfire
+**Technologies**: asp.net (net 6-7), AWS, MongoDb (DocumentDB), Redis, Kafka, Unity
 
 RemSoft.Dev 
 ----------------------
@@ -24,7 +24,7 @@ ______
 
 **Responsibilities**: The backend part of the project is responsible for calling commands on the P400 terminal and acts as an intermediary between the terminal and the external parent.
 
-**Technologies**: .Net 6, WAMP, Crossbar.IO
+**Technologies**: asp.net (net 6-7), WAMP, Crossbar.IO, ZVT
 ______
 
 **Project**: NDA platform
@@ -36,7 +36,7 @@ this platform.
 **Responsibilities**: Entire service was written in .NET. The project has been on the market for quite some time
 and is constantly being updated. This is what our team did. 
 
-**Technologies**: .NET
+**Technologies**: .NET 
 ______
 
 **Project**: NDA platform
@@ -46,7 +46,7 @@ ______
 **Responsibilities**: Entire service was written in .NET Framework 4.7. The project has been on the market for quite some time
 and is constantly being updated.
 
-**Technologies**: .NET, Sitecore, Html, Js, Solr
+**Technologies**: .NET Framework, Sitecore, Html, Js, Solr
 ______
 **Project**: NDA E-learning platform
 
@@ -104,7 +104,7 @@ NDA COMPANY
 **Responsibilities**: Development and design from scratch of three auxiliary services for processing OTP keys and web socket communication, participation in the development of the main system management service, CI / CD using docker and gitlab, Raspbian system emulation using Qemu, emulation of working with COM
 ports on a custom board
 
-**Technologies**: Kotlin android, IOS swift, Asp.Net core 
+**Technologies**: Asp.Net Core 
 
 Infopulse + KPI
 ---
@@ -118,7 +118,7 @@ information pages.
 
 **Responsibilities**: Backend development, assistance in managing a team of student backend developers, assistance to mentors in distributing tasks between junior specialists, generating scripts for CI / CD, reviewing pull requests, testing of the software product for problems or issues.
 
-**Technologies**: React, Asp.Net core 3.1, Gitlab as repository and CI/CD platform
+**Technologies**: React, Asp.Net core 3.1, Gitlab CI/CD 
 
 ___
 > https://inclusivehub.com.ua/
@@ -131,7 +131,7 @@ pages.
 **Responsibilities**: Development of the server part, the formation of scripts for CI / CD, preliminary testing of
 the software product for problems or issues. 
 
-**Technologies**: React, Asp.Net core 3.1, Gitlab as repository and CI/CD platform
+**Technologies**: React, Asp.Net core 3.1, Gitlab CI/CD
 
 Brainer Desision
 ---
