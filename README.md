@@ -4,11 +4,11 @@
 
 <code>📓 [Experience](EXPERIENCE.md)</code>
 
-<code>👷 Speciality: Software engineer / Backend </code><br>
+<code>👷 Speciality: Software engineer / Backend / Technical frontend </code><br>
 
 <code>🧑‍💻 Languages: C#</code>
 
-<code>📦 Tech stack: DotNet (Framework 4-4.8, Core 3, net 5-6), Cloud DevOps </code>
+<code>📦 Tech stack: DotNet (latest versions), Cloud DevOps </code>
 
 <code>💬 telegram: [Elay](https://t.me/IKUQR)</code>
 
