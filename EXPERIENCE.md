@@ -3,18 +3,41 @@ Whimsy Games
 
 > August 2022 - present
 
-**Project**: NDA game
+______
 
-**Description**: Blockchain AAA game with RPG mechanics and strong backend part.
+**Project**: [UNDEADS](https://undeads.com) NDA game
+
+**Description**: ❄️FROZEN❄️ Blockchain AAA multiplayer game with RPG mechanics and strong backend part.
 
 **Responsibilities**: Write backend in .Net 6. Develop of architecture for a number of necessary services for processing the player's session.
 
 **Technologies**: asp.net (net 6-7), GraphQL, AWSSDK (also GameLift sdk), MongoDb (DocumentDB), Redis, Kafka, Unity
 
+______
+
+**Project**: NDA game
+
+**Description**: Mobile third-person moba (multiplayer) shooter (ref: Brawl Stars)
+
+**Responsibilities**: Develop the backend using .Net 7. Architect and implement essential services for managing player data and controlling game sessions. Perform code optimization and revisions.
+
+**Technologies**: asp.net (net 6-7), AWSSDK, Edgegap, PostgreSQL, Redis, SQS, Unity
+
+______
+
+**Project**: [UNDEADS](https://undeads.com) NDA game
+
+**Description**: Desktop third-person battle royale survival multiplayer shooter.
+
+**Responsibilities**: Develop the backend using .Net 8 as the sole backend developer. Create the architecture from scratch for all essential backend components, including management of game sessions.
+
+**Technologies**: asp.net (net 7-8), AWSSDK (also GameLift sdk), Edgegap, PostgreSQL, Redis, RabbitMQ, Unity
+
+
 RemSoft.Dev 
 ----------------------
 
-> October 2021 - present
+> October 2021 - December 2023
 
 ______
 
