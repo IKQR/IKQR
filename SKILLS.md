@@ -14,7 +14,7 @@
 - .NET
     - Framework 4.4-4.8
     - Core 3.1
-    - 5-6 (7 preview)
+    - 5-8
 - WPF
 - Windows Forms
 - ASP .NET
@@ -48,7 +48,7 @@
 - MS SQL Server
 - MongoDB
 
-# Instruments
+# Tools
 - GIT
     - GitHub
     - GitLab (CI/CD)
