@@ -21,7 +21,7 @@ ______
 
 **Responsibilities**: Develop the backend using .Net 7. Architect and implement essential services for managing player data and controlling game sessions. Perform code optimization and revisions.
 
-**Technologies**: asp.net (net 6-7), AWSSDK, Edgegap, PostgreSQL, Redis, SQS, Unity
+**Technologies**: asp.net (net 6-7), AWSSDK, Edgegap, PostgreSQL, Redis, SQS, Blazor, Unity
 
 ______
 
@@ -31,7 +31,7 @@ ______
 
 **Responsibilities**: Develop the backend using .Net 8 as the sole backend developer. Create the architecture from scratch for all essential backend components, including management of game sessions.
 
-**Technologies**: asp.net (net 7-8), AWSSDK (also GameLift sdk), Edgegap, PostgreSQL, Redis, RabbitMQ, Unity
+**Technologies**: asp.net (net 7-8), AWSSDK (also GameLift sdk), Edgegap, PostgreSQL, Redis, RabbitMQ, Blazor, Unity
 
 
 RemSoft.Dev 
