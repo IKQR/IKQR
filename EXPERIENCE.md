@@ -1,7 +1,43 @@
+"Are you fruits?" indie game studio
+----------------------
+
+> January 2024 - present [Free time, no billable, hobbie]
+
+______
+
+**Project**: [Tru Story Time](https://store.steampowered.com/app/2836730/True_Story_Time/?l=ukrainian) on Steam
+
+**Description**: Party text video game where you create a "real" story with your friends.
+
+**Responsibilities**: Write backend in .Net 8, deployment on own Raspbery Pi 4 linux server
+
+**Technologies**: asp.net (net 8), Redis, Unity
+
+
 Whimsy Games
 ----------------------
 
 > August 2022 - present
+
+______
+
+**Project**: [UNDEADS](https://undeads.com) NDA game
+
+**Description**: Desktop third-person battle royale survival multiplayer shooter.
+
+**Responsibilities**: Develop the backend using .Net 8 as the sole backend developer. Create the architecture from scratch for all essential backend components, including management of game sessions.
+
+**Technologies**: asp.net (net 7-8), AWSSDK (also GameLift sdk), Edgegap, PostgreSQL, Redis, RabbitMQ, Blazor, Unity
+
+______
+
+**Project**: NDA game
+
+**Description**: Mobile third-person moba (multiplayer) shooter (ref: Brawl Stars)
+
+**Responsibilities**: Develop the backend using .Net 8 as the sole backend developer. Create the architecture from scratch for all essential backend components, including management of game sessions.
+
+**Technologies**: asp.net (net 8), AWSSDK, Edgegap, PostgreSQL, Redis, SQS, Unity
 
 ______
 
@@ -22,17 +58,6 @@ ______
 **Responsibilities**: Develop the backend using .Net 7. Architect and implement essential services for managing player data and controlling game sessions. Perform code optimization and revisions.
 
 **Technologies**: asp.net (net 6-7), AWSSDK, Edgegap, PostgreSQL, Redis, SQS, Blazor, Unity
-
-______
-
-**Project**: [UNDEADS](https://undeads.com) NDA game
-
-**Description**: Desktop third-person battle royale survival multiplayer shooter.
-
-**Responsibilities**: Develop the backend using .Net 8 as the sole backend developer. Create the architecture from scratch for all essential backend components, including management of game sessions.
-
-**Technologies**: asp.net (net 7-8), AWSSDK (also GameLift sdk), Edgegap, PostgreSQL, Redis, RabbitMQ, Blazor, Unity
-
 
 RemSoft.Dev 
 ----------------------
