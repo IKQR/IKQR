@@ -22,6 +22,9 @@
 - Unity
 
 # Clouds
+- Edgegap
+    - Deployment
+    - Matchmaking
 - Heroku
     - Docker based deployment
 - Azure
