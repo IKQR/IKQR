@@ -1,4 +1,4 @@
-<code>🎮 Company: Whimsy Games</code>
+<code>🎮 Company: Onseo</code>
 
 <code>💡 [Skills](SKILLS.md)</code>
 
