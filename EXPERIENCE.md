@@ -5,7 +5,7 @@
 
 ______
 
-**Project**: [Tru Story Time](https://store.steampowered.com/app/2836730/True_Story_Time/?l=ukrainian) on Steam
+**Project**: [True Story Time](https://store.steampowered.com/app/2836730/True_Story_Time/?l=ukrainian) on Steam
 
 **Description**: Party text video game where you create a "real" story with your friends.
 
@@ -13,11 +13,26 @@ ______
 
 **Technologies**: asp.net (net 8), Redis, Unity
 
+Onseo
+----------------------
+
+> August 2023 - present
+
+______
+
+**Project**: NDA
+
+**Description**: -
+
+**Responsibilities**: -
+
+**Technologies**: -
+
 
 Whimsy Games
 ----------------------
 
-> August 2022 - present
+> August 2022 - August 2023
 
 ______
 
