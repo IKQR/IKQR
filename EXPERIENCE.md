@@ -1,7 +1,34 @@
+
+Onseo
+----------------------
+
+> August 2023 - present
+
+______
+
+**Project**: Gaming Innovations Group CoreX
+
+**Description**: A platform that integrates with multiple gaming systems, providing a ready-made solution for user management, data storage, and regulatory policy configuration.
+
+**Responsibilities**: Maintaining and enhancing microservices architecture, implementing new features, migrating and upgrading services to newer .NET versions, optimizing performance and system stability, integrating with internal and external services
+
+**Technologies**: .NET 6–8, Orleans, gRPC, PostgreSQL, Kafka, Elasticsearch, Keycloak
+
+
 "Are you fruits?" indie game studio
 ----------------------
 
 > January 2024 - present [Free time, no billable, hobbie]
+
+______
+
+**Project**: [How Many Slices?](https://coda.io/@are-you-fruits/how-many-slices/tutorial-21)
+
+**Description**: 2D (grid tile-map) top-down coop game about cooking
+
+**Responsibilities**: Project/Team Management, DevOps, CI|CD pipeline configuration, Narrative Design
+
+**Technologies**: SCRUM :)
 
 ______
 
@@ -12,22 +39,6 @@ ______
 **Responsibilities**: Write backend in .Net 8, deployment on own Raspbery Pi 4 linux server
 
 **Technologies**: asp.net (net 8), Redis, Unity
-
-Onseo
-----------------------
-
-> August 2023 - present
-
-______
-
-**Project**: NDA
-
-**Description**: -
-
-**Responsibilities**: -
-
-**Technologies**: -
-
 
 Whimsy Games
 ----------------------
