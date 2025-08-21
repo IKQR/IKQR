@@ -1,7 +1,24 @@
+# Frameworks
+- **ASP .NET**
+- .NET
+    - Framework 4.4-4.8
+    - Core 3.1
+    - 5-8
+- Blazor
+- Unity
+
+# Technologies
+- EF Core
+- Orleans
+- MediatR
+- GRPC
+- Avro
+
 # Programming languages
 -  **C#**
--  VB .NET
 -  SQL
+-  Rust
+-  VB .NET
 -  TypeScript
 -  JavaScript
 
@@ -10,37 +27,11 @@
 - Markdown
 - LateX
 
-# Technologies (MAIN stack)
-- .NET
-    - Framework 4.4-4.8
-    - Core 3.1
-    - 5-8
-- WPF
-- Windows Forms
-- ASP .NET
-- Blazor
-- Unity
-
 # Clouds
-- Edgegap
-    - Deployment
-    - Matchmaking
-- Heroku
-    - Docker based deployment
-- Azure
-    - SQL Databases
-    - CI/CD
 - AWS
-    - S3
-    - EC2
-    - Grafana
-    - Kafka
-    - RabbitMQ
-    - Codecommit
-    - Pipelines
-    - Elastic Beanstalks
-    - Gamelift
-    - DocumentDB
+- Azure
+- Edgegap
+- Heroku
 
 # Databases
 - **PostgreSQL**
@@ -50,6 +41,15 @@
 - DynamoDB
 - MS SQL Server
 - MongoDB
+- DocumentDB
+
+# Infrastructure
+- RabbitMQ
+- Kafka
+- SQS
+- Keycloak
+- Redis
+- OPA
 
 # Tools
 - GIT
@@ -77,5 +77,5 @@
     - Git Extensions (P4Merge)
 
 # Operating systems
-- Windows xp/7/8/10/11
+- Windows (+WSL)
 - Ubuntu (Server)
