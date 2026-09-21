@@ -1,0 +1,71 @@
+name: Release CV
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "Summary.md"
+      - "SKILLS.md"
+      - "EXPERIENCE.md"
+      - "PROJECTS.md"
+      - "EDUCATION.md"
+      - "CERTIFICATES.md"
+      - "LANGUAGES.md"
+      - "resume/**"
+      - ".github/workflows/release-cv.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  release-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # DejaVu Sans is a defensive Unicode font fallback; resume/scripts/
+      # generate_resume.py picks it up automatically on Linux when present.
+      # fonts-dejavu-core alone only ships the regular/bold weights - the
+      # oblique/bold-oblique variants the script also needs live in
+      # fonts-dejavu-extra, so both packages are required.
+      - name: Install a Unicode-capable fallback font
+        run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core fonts-dejavu-extra
+
+      - name: Install Python dependencies
+        run: pip install -r resume/requirements.txt
+
+      - name: Compute release metadata
+        id: meta
+        run: |
+          echo "stamp=$(date -u +'%Y_%m')" >> "$GITHUB_OUTPUT"
+          echo "tag=cv-$(date -u +'%Y-%m')" >> "$GITHUB_OUTPUT"
+
+      - name: Generate CV PDF
+        env:
+          RESUME_PHONE: ${{ secrets.RESUME_PHONE }}
+          RESUME_LOCATION: ${{ secrets.RESUME_LOCATION }}
+        run: python resume/scripts/generate_resume.py
+
+      - name: Rename PDF to Surname_FirstName_CV_YYYY_MM.pdf
+        id: rename
+        run: |
+          FILE="resume/output/Kusik_Illia_CV_${{ steps.meta.outputs.stamp }}.pdf"
+          mv resume/output/Kusik_Illia_Resume.pdf "$FILE"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      # Reruns within the same month replace that month's release/tag
+      # instead of failing on a duplicate tag name.
+      - name: Create or update the GitHub release and tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ steps.meta.outputs.tag }}"
+          gh release delete "$TAG" --yes --cleanup-tag || true
+          gh release create "$TAG" "${{ steps.rename.outputs.file }}" \
+            --title "CV ${{ steps.meta.outputs.stamp }}" \
+            --notes "Automated résumé build from commit ${{ github.sha }}."

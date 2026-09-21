@@ -1,0 +1,3 @@
+# Summary
+
+Full-stack Software Engineer with 7+ years of experience architecting and delivering scalable microservices, distributed systems, and end-to-end product solutions across fintech, healthcare, e-commerce, and gaming domains. Experience in technical leadership, including leading a .NET team, mentoring groups of up to 15 junior/trainee developers, and managing a distributed indie game team using SCRUM. Deep expertise in .NET Core 3.1-8, C#, Clean/Onion Architecture, DDD, and event-driven systems (Kafka, RabbitMQ, gRPC), paired with hands-on full-stack delivery (Blazor, JavaScript/TypeScript, Unity) and cloud infrastructure (AWS, Azure, Docker, Kubernetes).
