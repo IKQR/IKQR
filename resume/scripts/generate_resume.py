@@ -24,7 +24,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import cm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.graphics.shapes import Circle, Drawing, Group, Line, Polygon, Rect
+from reportlab.graphics.shapes import Circle, Drawing, Group, Path as VectorPath, Polygon
 from reportlab.platypus import (
     HRFlowable,
     ListFlowable,
@@ -332,24 +332,83 @@ def icon_pin() -> Drawing:
     ])
 
 
+# Mail and phone glyph outlines below are traced from Feather Icons
+# (mail.svg / phone.svg, MIT licensed, https://github.com/feathericons/feather),
+# with the original 24x24 viewBox path/polyline points scaled down to the
+# ICON box and y-flipped into ReportLab's bottom-up coordinate space. Drawn
+# as thin round-capped strokes (like the source glyphs) rather than filled
+# shapes - a previous filled/thick-stroke attempt at this size rendered as
+# an unrecognizable solid blob instead of a mail/phone glyph.
+_ICON_STROKE_W = 0.65
+
+_MAIL_BODY_POINTS = [1.167, 5.833, 5.833, 5.833, 6.154, 5.833, 6.417, 5.571, 6.417, 5.25, 6.417, 1.75, 6.417, 1.429, 6.154, 1.167, 5.833, 1.167, 1.167, 1.167, 0.846, 1.167, 0.583, 1.429, 0.583, 1.75, 0.583, 5.25, 0.583, 5.571, 0.846, 5.833, 1.167, 5.833]
+_MAIL_BODY_OPS = [0, 1, 2, 1, 2, 1, 2, 1, 2, 3]
+_MAIL_FLAP_POINTS = [6.417, 5.25, 3.5, 3.208, 0.583, 5.25]
+
+_PHONE_POINTS = [6.417, 2.065, 6.417, 1.19, 6.417, 1.026, 6.349, 0.869, 6.228, 0.758, 6.107, 0.647, 5.944, 0.592, 5.781, 0.607, 4.883, 0.704, 4.021, 1.011, 3.264, 1.502, 2.559, 1.95, 1.962, 2.547, 1.514, 3.252, 1.021, 4.013, 0.714, 4.879, 0.618, 5.781, 0.604, 5.944, 0.658, 6.106, 0.768, 6.227, 0.879, 6.348, 1.035, 6.417, 1.199, 6.417, 2.074, 6.417, 2.367, 6.42, 2.616, 6.205, 2.657, 5.915, 2.694, 5.635, 2.763, 5.36, 2.861, 5.095, 2.941, 4.882, 2.89, 4.642, 2.73, 4.48, 2.36, 4.11, 2.775, 3.379, 3.379, 2.775, 4.11, 2.36, 4.48, 2.73, 4.642, 2.89, 4.882, 2.941, 5.095, 2.861, 5.36, 2.763, 5.635, 2.694, 5.915, 2.657, 6.208, 2.616, 6.424, 2.361, 6.417, 2.065]
+_PHONE_OPS = [0, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 3]
+
+
+def _stroke_path(points: list[float], operators: list[int], color) -> VectorPath:
+    path = VectorPath(strokeColor=color, fillColor=None, strokeWidth=_ICON_STROKE_W,
+                       strokeLineCap=1, strokeLineJoin=1)
+    path.points = points
+    path.operators = operators
+    return path
+
+
 def icon_mail() -> Drawing:
     color = colors.HexColor(MUTED_COLOR)
     return _icon([
-        Rect(0.3, 1.3, ICON - 0.6, ICON - 3.6, fillColor=None, strokeColor=color, strokeWidth=1.0),
-        Line(0.3, ICON - 2.3, ICON / 2, ICON / 2 + 0.4, strokeColor=color, strokeWidth=1.0),
-        Line(ICON - 0.3, ICON - 2.3, ICON / 2, ICON / 2 + 0.4, strokeColor=color, strokeWidth=1.0),
+        _stroke_path(_MAIL_BODY_POINTS, _MAIL_BODY_OPS, color),
+        _stroke_path(_MAIL_FLAP_POINTS, [0, 1, 1], color),
     ])
 
 
 def icon_phone() -> Drawing:
-    # A filled rounded-rect "handset body" - a thin diagonal bar between two
-    # dots (a previous attempt) read as a pencil/slash at 7pt, not a phone.
-    # A solid chunky shape stays legible at this size the way the filled pin
-    # icon does.
     color = colors.HexColor(MUTED_COLOR)
-    return _icon([
-        Rect(2.1, 0.5, ICON - 4.2, ICON - 1, radius=1.3, fillColor=color, strokeColor=None),
-    ])
+    return _icon([_stroke_path(_PHONE_POINTS, _PHONE_OPS, color)])
+
+
+# Brand glyphs below are traced the same way from Simple Icons (CC0 licensed,
+# https://github.com/simple-icons/simple-icons), filled solid (like icon_pin)
+# rather than stroked, matching each logo's original single-path silhouette.
+_GITHUB_POINTS = [3.5, 6.913, 1.566, 6.913, 0.0, 5.346, 0.0, 3.413, 0.0, 1.867, 1.003, 0.555, 2.393, 0.093, 2.568, 0.06, 2.632, 0.168, 2.632, 0.261, 2.632, 0.344, 2.629, 0.564, 2.628, 0.856, 1.654, 0.645, 1.449, 1.326, 1.449, 1.326, 1.29, 1.73, 1.06, 1.837, 1.06, 1.837, 0.743, 2.054, 1.084, 2.05, 1.084, 2.05, 1.436, 2.026, 1.62, 1.69, 1.62, 1.69, 1.932, 1.154, 2.44, 1.309, 2.64, 1.399, 2.671, 1.625, 2.761, 1.779, 2.861, 1.867, 2.084, 1.954, 1.267, 2.255, 1.267, 3.596, 1.267, 3.978, 1.403, 4.29, 1.627, 4.535, 1.588, 4.624, 1.47, 4.98, 1.658, 5.462, 1.658, 5.462, 1.951, 5.556, 2.62, 5.103, 2.9, 5.181, 3.198, 5.219, 3.495, 5.221, 3.793, 5.219, 4.09, 5.181, 4.37, 5.103, 5.035, 5.556, 5.328, 5.462, 5.328, 5.462, 5.517, 4.98, 5.398, 4.624, 5.363, 4.535, 5.587, 4.29, 5.722, 3.978, 5.722, 3.596, 5.722, 2.252, 4.904, 1.956, 4.125, 1.87, 4.248, 1.765, 4.362, 1.55, 4.362, 1.222, 4.362, 0.754, 4.357, 0.377, 4.357, 0.264, 4.357, 0.172, 4.418, 0.062, 4.598, 0.097, 5.998, 0.556, 7.0, 1.869, 7.0, 3.413, 7.0, 5.346, 5.433, 6.913, 3.5, 6.913]
+_GITHUB_OPS = [0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+
+# LinkedIn and Spotify each come from Simple Icons as ONE path with several
+# subpaths (badge/circle + letterforms/wave strokes) that wind in opposite
+# directions - filling the whole thing at once with nonzero-winding (Path's
+# default fillMode) punches the letterforms/waves out in white automatically,
+# same as the source SVG's own default fill rule. No separate white overlay
+# shapes needed.
+_LINKEDIN_POINTS = [5.964, 1.035, 4.927, 1.035, 4.927, 2.659, 4.927, 3.046, 4.919, 3.545, 4.387, 3.545, 3.847, 3.545, 3.764, 3.123, 3.764, 2.688, 3.764, 1.035, 2.727, 1.035, 2.727, 4.375, 3.723, 4.375, 3.723, 3.92, 3.737, 3.92, 3.876, 4.182, 4.214, 4.459, 4.719, 4.459, 5.77, 4.459, 5.964, 3.768, 5.964, 2.868, 5.964, 1.035, 1.557, 4.832, 1.223, 4.832, 0.955, 5.102, 0.955, 5.434, 0.955, 5.766, 1.223, 6.036, 1.557, 6.036, 1.889, 6.036, 2.159, 5.766, 2.159, 5.434, 2.159, 5.102, 1.889, 4.832, 1.557, 4.832, 2.076, 1.035, 1.037, 1.035, 1.037, 4.375, 2.076, 4.375, 2.076, 1.035, 6.482, 7.0, 0.517, 7.0, 0.231, 7.0, 0.0, 6.774, 0.0, 6.496, 0.0, 0.504, 0.0, 0.225, 0.231, 0.0, 0.517, 0.0, 6.481, 0.0, 6.767, 0.0, 7.0, 0.225, 7.0, 0.504, 7.0, 6.496, 7.0, 6.774, 6.767, 7.0, 6.481, 7.0, 6.482, 7.0]
+_LINKEDIN_OPS = [0, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 3, 0, 2, 2, 2, 2, 3, 0, 1, 1, 1, 1, 3, 0, 2, 2, 2, 2, 3]
+
+_SPOTIFY_POINTS = [3.5, 7.0, 1.575, 7.0, 0.0, 5.425, 0.0, 3.5, 0.0, 1.575, 1.575, 0.0, 3.5, 0.0, 5.425, 0.0, 7.0, 1.575, 7.0, 3.5, 7.0, 5.425, 5.443, 7.0, 3.5, 7.0, 5.11, 1.942, 5.04, 1.838, 4.918, 1.802, 4.812, 1.873, 3.99, 2.38, 2.958, 2.485, 1.732, 2.205, 1.61, 2.17, 1.505, 2.257, 1.47, 2.362, 1.435, 2.485, 1.522, 2.59, 1.628, 2.625, 2.958, 2.923, 4.112, 2.8, 5.022, 2.24, 5.145, 2.188, 5.162, 2.048, 5.11, 1.942, 5.53, 2.905, 5.443, 2.782, 5.285, 2.73, 5.162, 2.817, 4.218, 3.395, 2.783, 3.57, 1.68, 3.22, 1.54, 3.185, 1.383, 3.255, 1.348, 3.395, 1.313, 3.535, 1.383, 3.693, 1.523, 3.728, 2.8, 4.112, 4.375, 3.92, 5.46, 3.255, 5.565, 3.202, 5.617, 3.027, 5.53, 2.905, 5.565, 3.885, 4.445, 4.55, 2.573, 4.62, 1.505, 4.287, 1.33, 4.235, 1.155, 4.34, 1.103, 4.497, 1.05, 4.673, 1.155, 4.848, 1.312, 4.9, 2.555, 5.268, 4.603, 5.198, 5.898, 4.428, 6.055, 4.34, 6.108, 4.13, 6.02, 3.972, 5.933, 3.85, 5.723, 3.798, 5.565, 3.885]
+_SPOTIFY_OPS = [0, 2, 2, 2, 2, 3, 0, 2, 2, 2, 2, 2, 2, 3, 0, 2, 2, 2, 2, 2, 2, 3, 0, 2, 2, 2, 2, 2, 2, 3]
+
+
+def _fill_path(points: list[float], operators: list[int], color) -> VectorPath:
+    path = VectorPath(fillColor=color, strokeColor=None)
+    path.points = points
+    path.operators = operators
+    return path
+
+
+def icon_github() -> Drawing:
+    color = colors.HexColor(MUTED_COLOR)
+    return _icon([_fill_path(_GITHUB_POINTS, _GITHUB_OPS, color)])
+
+
+def icon_linkedin() -> Drawing:
+    color = colors.HexColor(MUTED_COLOR)
+    return _icon([_fill_path(_LINKEDIN_POINTS, _LINKEDIN_OPS, color)])
+
+
+def icon_spotify() -> Drawing:
+    color = colors.HexColor(MUTED_COLOR)
+    return _icon([_fill_path(_SPOTIFY_POINTS, _SPOTIFY_OPS, color)])
 
 
 # --------------------------------------------------------------------------
@@ -405,9 +464,9 @@ def build_header(styles: dict) -> list:
         items.append((icon_phone(), config.PHONE, Paragraph(esc(config.PHONE), styles["contact"])))
 
     items += [
-        (None, config.LINKEDIN_LABEL, link(config.LINKEDIN_URL, config.LINKEDIN_LABEL)),
-        (None, config.GITHUB_LABEL, link(config.GITHUB_URL, config.GITHUB_LABEL)),
-        (None, config.SPOTIFY_LABEL, link(config.SPOTIFY_URL, config.SPOTIFY_LABEL)),
+        (icon_linkedin(), config.LINKEDIN_LABEL, link(config.LINKEDIN_URL, config.LINKEDIN_LABEL)),
+        (icon_github(), config.GITHUB_LABEL, link(config.GITHUB_URL, config.GITHUB_LABEL)),
+        (icon_spotify(), config.SPOTIFY_LABEL, link(config.SPOTIFY_URL, config.SPOTIFY_LABEL)),
     ]
 
     return [
