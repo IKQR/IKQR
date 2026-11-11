@@ -1,23 +1,23 @@
-<code>👷 Speciality: Senior Backend Engineer / .NET / Team Lead</code>
+## Hi, I'm Illia 👋
 
-<code>📦 Tech stack: .NET, Distributed Systems, Event-Driven Microservices (Orleans, Kafka, gRPC, Kubernetes)</code>
+Senior .NET Backend Engineer and Team Lead at **Onseo**, based in Ivano-Frankivsk, Ukraine.
+7+ years building microservices and distributed systems across fintech, healthcare, e-commerce and gaming.
 
-<code>🎮 Company: Onseo</code>
+- 🏗️ Now: maintaining and evolving a 150+ microservice gaming platform (payments, wallets, KYC) on .NET, Orleans, Kafka and Kubernetes
+- 🎮 Before: sole backend developer, later team lead, at Whimsy Games: rebuilt the backend of [UNDEADS](https://undeads.com) and halved its infrastructure costs
+- 🍉 After hours: managing the team of the indie studio [Are you fruits?](https://github.com/are-you-fruits-studio): [True Story Time](https://store.steampowered.com/app/2836730/True_Story_Time/) on Steam and a game engine in Rust
+- 🧑‍🏫 Mentor and programming tutor: I've led groups of up to 15 junior and trainee developers
 
-<code>💡 [Skills](SKILLS.md)</code>
+### Tech
 
-<code>📓 [Experience](EXPERIENCE.md)</code>
+- **Core:** C# · .NET · ASP.NET · Orleans · gRPC · Kafka · RabbitMQ · PostgreSQL · Redis · Docker · Kubernetes · AWS
+- **Also:** Rust · Python / Django · TypeScript · Unity · Blazor
+- **Practices:** Clean / Onion / Hexagonal architecture · DDD · event-driven systems
 
-<code>🚀 [Projects](PROJECTS.md)</code>
+### More about me
 
-<code>🌍 [Languages](LANGUAGES.md)</code>
+[Experience](EXPERIENCE.md) · [Projects](PROJECTS.md) · [Skills](SKILLS.md) · [Certificates](CERTIFICATES.md) · [Education](EDUCATION.md) · [Languages](LANGUAGES.md) · 📄 [Download CV (PDF)](https://github.com/IKQR/IKQR/releases/latest)
 
-<code>🎓 [Certificates](CERTIFICATES.md)</code>
+### Contact
 
-<code>🏫 [Education](EDUCATION.md)</code>
-
-<code>🧑‍💻 Programming languages: C#</code>
-
-<code>💬 telegram: [Elay](https://t.me/IKUQR)</code>
-
-<code>📫 email: [kusikillya2001@gmail.com](mailto:kusikillya2001@gmail.com)</code>
+[LinkedIn](https://www.linkedin.com/in/illia-kusik/)
